@@ -24,4 +24,57 @@ it to something else.
   => employment = document.querySelector('#employment h3.info-title')
   => employment.innerText = 'Napping'
 
-5.  
+5.  Change the colour of the body.
+
+  => mainSection = document.querySelector('body')
+  => mainSection.style.backgroundColor = 'white'
+
+6.  Change the colour used by the highlight class.
+
+  => featured = document.querySelectorAll('.highlight')
+  => featured.forEach(function(item) { item.style.color = 'purple'})
+
+7.  Change the font family of the h1 to 'monospace'.
+
+  => heading = document.querySelectorAll('h1')
+  => heading.forEach(function(item) { item.style.fontFamily = 'monospace' })
+
+8.  Find a way to select the round icons in the sidebar
+and then change their colour.
+
+  => icon = document.querySelectorAll('a.action-icon-bg')
+  => icon.forEach(function(item) { item.style.backgroundColor = 'blue' })
+
+9.  Scroll down to the contact form. Change the placeholder
+attribute of the name field to "identify yourself".
+
+  => nameField = document.querySelector('input#name.contact-info')
+  => nameField.placeholder = 'identify yourself'
+
+10.  Change the placeholder attribute of the message field
+to "state your business".
+
+  => messageField = document.querySelector('textarea#message')
+  => messageField.placeholder = 'state your business'
+
+11.  Give the name field a "value" attribute of "your nemesis".
+
+  => nameField = document.querySelector('input#name.contact-info')
+  => nameField.value = 'your nemesis'
+
+12.  Change the value attribute of the email field to
+"koalathebear@gmail.com"
+
+  => emailField = document.querySelector('input#email.contact-info')
+  => emailField.value = 'koalathebear@gmail.com'
+
+13.  Change the value of the submit button on the contact form
+to "En garde!".
+
+  => submitButton = document.querySelector('input#submit')
+  => submitButton.value = 'En garde!'
+
+14.  Find a way to disable the submit button
+
+  => submitButton = document.querySelector('input#submit')
+  => submitButton.disabled = 'disabled'
