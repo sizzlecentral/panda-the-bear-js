@@ -15,4 +15,13 @@ attribute to another picture URL of your choosing.
 3.  Select the heading that says "Panda the Bear" and
 change it to your own name.
 
-  => 
+  => heading = document.querySelector('h1.highlight')
+  => heading.innerText = 'Don Cooper'
+
+4.  Select the heading that says "Employment" and change
+it to something else.
+
+  => employment = document.querySelector('#employment h3.info-title')
+  => employment.innerText = 'Napping'
+
+5.  
