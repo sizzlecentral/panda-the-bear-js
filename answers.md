@@ -78,3 +78,12 @@ to "En garde!".
 
   => submitButton = document.querySelector('input#submit')
   => submitButton.disabled = 'disabled'
+
+15.  We should help Panda protect their privacy by clearing
+their personal details from the sidebar.
+
+  => form = document.querySelector('form')
+  => reset = form.reset()
+
+
+/////  PART 2  /////
