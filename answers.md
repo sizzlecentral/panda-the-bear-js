@@ -104,4 +104,20 @@ travel" skill off the page
 3.  Wow, that was so satisfying I think we should do it 10 more
 times. Use a for loop to help you do this.
 
-  => 
+  => portfolio = document.querySelector('.portfolio-container')
+  => for (var i = 0; i < 10; i++) { image = document.querySelector('.profile-image').cloneNode(); portfolio.appendChild(image) }
+
+4.  Let’s add a message about when the page was last updated.
+We'll do this by appending a new <li> element to the <ul> in
+the sidebar
+
+  => var listItem = document.createElement('li')
+  => var leftSpan = document.createElement('span')
+  => leftSpan.innerText = 'Page last updated on'
+  => sideList = document.querySelector('.bio-info')
+  => sideList.appendChild(listItem)
+  => listItem.appendChild(leftSpan)
+  => modified = document.lastModified
+  => var rightSpan = document.createElement('span')
+  => rightSpan.innerText = modified
+  => listItem.appendChild(rightSpan)
