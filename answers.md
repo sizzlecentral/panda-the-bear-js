@@ -87,3 +87,21 @@ their personal details from the sidebar.
 
 
 /////  PART 2  /////
+
+1.  Panda the Bear is lying about their skills! Take the "time
+travel" skill off the page
+
+  => skills = document.querySelectorAll('.bar-default')[2]
+  => timeTravel = document.querySelector('#time-travel')
+  => skills.removeChild(timeTravel)
+
+2.  That drawing of Pikachu is really cute. Let’s duplicate it using cloneNode() and insert it at the bottom of the .portfolio-container
+
+  => portfolio = document.querySelector('.portfolio-container')
+  => image = document.querySelector('.profile-image').cloneNode()
+  => portfolio.appendChild(image)
+
+3.  Wow, that was so satisfying I think we should do it 10 more
+times. Use a for loop to help you do this.
+
+  => 
